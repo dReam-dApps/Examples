@@ -17,5 +17,5 @@ Table of contents:
 #### Licensing
 
 dReams platform and packages are free and open source.    
-The source code is published under the [MIT](https://github.com/dReam-dApps/dReams/blob/main/LICENSE) License.   
+The source code is published under the [MIT](https://github.com/dReam-dApps/Examples/blob/main/LICENSE) License.   
 Copyright © 2023 dReam dApps   
