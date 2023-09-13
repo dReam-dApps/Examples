@@ -1,14 +1,13 @@
 package main
 
 import (
-	"runtime"
-
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 
 	"github.com/dReam-dApps/dReams/dwidget"
 	"github.com/dReam-dApps/dReams/menu"
 	"github.com/dReam-dApps/dReams/rpc"
+	"github.com/sirupsen/logrus"
 )
 
 // dReams dwidget NewVerticalEntries() example
@@ -21,7 +20,7 @@ func main() {
 	menu.Gnomes.Fast = true
 
 	// Initialize logger to Stdout
-	menu.InitLogrusLog(runtime.GOOS == "windows")
+	menu.InitLogrusLog(logrus.InfoLevel)
 
 	// Initialize fyne app
 	a := app.New()

@@ -3,7 +3,6 @@ package main
 import (
 	"os"
 	"os/signal"
-	"runtime"
 	"syscall"
 	"time"
 
@@ -29,7 +28,7 @@ func main() {
 	rpc.Daemon.Rpc = "127.0.0.1:10102"
 
 	// Initialize logger to Stdout
-	menu.InitLogrusLog(runtime.GOOS == "windows")
+	menu.InitLogrusLog(logrus.InfoLevel)
 
 	rpc.Ping()
 	// Check for daemon connection, if daemon is not connected we won't start Gnomon

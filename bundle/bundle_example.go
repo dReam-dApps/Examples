@@ -9,6 +9,7 @@ import (
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/widget"
 	"github.com/dReam-dApps/dReams/bundle"
+	"github.com/dReam-dApps/dReams/dwidget"
 )
 
 // Name my app
@@ -30,7 +31,7 @@ func main() {
 
 	// Initialize fyne container and add some various widgets for viewing purposes
 	cont := container.NewVBox()
-	cont.Add(container.NewAdaptiveGrid(3, widget.NewLabel("Label"), widget.NewEntry(), widget.NewButton("Button", nil)))
+	cont.Add(container.NewAdaptiveGrid(3, dwidget.NewCenterLabel("Label"), widget.NewEntry(), widget.NewButton("Button", nil)))
 	cont.Add(container.NewAdaptiveGrid(3, widget.NewLabel("Label"), widget.NewCheck("Check", nil), widget.NewButton("Button", nil)))
 	cont.Add(widget.NewPasswordEntry())
 	cont.Add(widget.NewSlider(0, 100))
