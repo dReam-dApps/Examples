@@ -32,7 +32,7 @@ func main() {
 	// Initialize fyne container and add some various widgets for viewing purposes
 	cont := container.NewVBox()
 	cont.Add(container.NewAdaptiveGrid(3, dwidget.NewCenterLabel("Label"), widget.NewEntry(), widget.NewButton("Button", nil)))
-	cont.Add(container.NewAdaptiveGrid(3, widget.NewLabel("Label"), widget.NewCheck("Check", nil), widget.NewButton("Button", nil)))
+	cont.Add(container.NewAdaptiveGrid(3, widget.NewLabel("Label"), widget.NewCheck("Check", nil), dwidget.NewLine(30, 30, bundle.TextColor)))
 	cont.Add(widget.NewPasswordEntry())
 	cont.Add(widget.NewSlider(0, 100))
 
